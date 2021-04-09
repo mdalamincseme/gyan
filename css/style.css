@@ -1188,7 +1188,8 @@ nav .button a:hover {
 }
 
 #testimonial-part .accordion-button:focus {
-    box-shadow: 0 0 0 0.25rem #fbaa33;
+/*    box-shadow: 0 0 0 0.25rem #fbaa33;*/
+    box-shadow: none;
 }
 
 /* =========================================
