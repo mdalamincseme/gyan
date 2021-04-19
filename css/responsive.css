@@ -197,6 +197,27 @@
         margin-top: 30px;
     }
 
+    #course-part .item .introduction {
+        text-align: center;
+    }
+
+    #course-part .item .introduction .name h2 {
+        font-size: 9px;
+    }
+
+    #course-part .item .introduction .name p {
+        font-size: 10px;
+    }
+
+    #course-part .item .introduction .rating ul {
+        margin-bottom: -2px;
+        ;
+    }
+
+    #course-part .item .details h3 {
+        font-size: 19px;
+    }
+
     #course-part .slick-dots {
         position: absolute;
         bottom: -5%;
@@ -247,6 +268,9 @@
         padding: 0;
     }
 
+    #event-part .item .text h2 {
+        font-size: 16px;
+    }
 
     #event-part .item .img {
         padding: 25px;
@@ -280,6 +304,10 @@
         padding-top: 60px;
     }
 
+    #testimonial-part h1 {
+        font-size: 25px;
+    }
+
     #testimonial-part .title p {
         margin-bottom: 40px;
     }
@@ -308,6 +336,7 @@
 
     #testimonial-part .details h2 {
         padding-left: 40px;
+        font-size: 15px;
     }
 
     #testimonial-part .details ul {
@@ -322,6 +351,11 @@
         transform: translateX(-50%);
         padding: 0;
 
+    }
+
+    #testimonial-part .accordion-item h2 {
+        font-size: 17px;
+        font: 500;
     }
 
     #testimonial-part .details-slider .slick-dots li {
@@ -402,6 +436,10 @@
         margin-bottom: 20px;
     }
 
+    #blog-part .big .img .overlay .icon {
+        margin-top: 23px;
+    }
+
     #blog-part .big .img .overlay .icon ul {
         margin-top: -20px;
         margin-right: 12px;
@@ -416,8 +454,12 @@
         margin-bottom: 10px;
     }
 
+    #blog-part .small .img .overlay .icon {
+        margin-top: 24px;
+    }
+
     #blog-part .small .img .overlay .icon ul {
-        margin-top: -20px;
+        margin-top: 0px;
     }
 
     #blog-part .big .img .overlay .text h2 a {
@@ -439,7 +481,7 @@
     }
 
     #blog-part .small .img .overlay .text h2 {
-        padding-top: 100px;
+        padding-top: 70px;
     }
 
     /* ========== #blog-part end============ */
@@ -466,6 +508,7 @@
     #contact-part .center h2 {
         margin-left: 5px;
         margin-bottom: -10px;
+        font-size: 25px;
     }
 
     #contact-part .center ul li {
@@ -474,7 +517,7 @@
     }
 
     #contact-part .center .teacher {
-        padding-left: 45px;
+        padding-left: 12px;
     }
 
     #contact-part .right {
@@ -488,10 +531,12 @@
     #contact-part .right h2 {
         padding-top: 10px;
         padding-bottom: 33px;
+        font-size: 25px;
     }
 
     #contact-part .right p {
         padding-bottom: 30px;
+        font-size: 12px;
     }
 
     #contact-part .right a {
@@ -504,6 +549,10 @@
 
     #contact-part .right h3 {
         padding-bottom: 5px;
+    }
+
+    #contact-part .right a:hover {
+        background: transparent;
     }
 
     /* ========== #contact-part end============ */
@@ -752,10 +801,12 @@
         padding: 0 12px;
         margin-bottom: 30px;
     }
-    #event-part .item-part{
+
+    #event-part .item-part {
         background: #eee;
         padding-bottom: 20px;
     }
+
     #event-part .item {
         display: inline;
         margin: 0;
