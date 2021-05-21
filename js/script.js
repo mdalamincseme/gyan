@@ -1,20 +1,29 @@
+// sticky menu
+
+$(window).scroll(function () {
+  if ($(window).scrollTop() > 100) {
+    $(".menu").addClass("fixedmenu")
+  } else {
+    $(".menu").removeClass("fixedmenu")
+  }
+})
+
 $('.banner-slider').slick({
   dots: false,
   infinite: true,
   speed: 300,
   slidesToShow: 1,
   slidesToScroll: 1,
-  prevArrow:'<i class="fas fa-angle-left prev"></i>',
-  nextArrow:'<i class="fas fa-angle-right next"></i>',
-  responsive: [
-    {
+  prevArrow: '<i class="fas fa-angle-left prev"></i>',
+  nextArrow: '<i class="fas fa-angle-right next"></i>',
+  responsive: [{
       breakpoint: 992,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
         dots: true,
-          arrows: false,
+        arrows: false,
       }
     },
     {
@@ -23,7 +32,7 @@ $('.banner-slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
-        dots:true,
+        dots: true,
       }
     },
     {
@@ -32,7 +41,7 @@ $('.banner-slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
-        dots:true,
+        dots: true,
       }
     }
     // You can unslick at a given breakpoint now by adding:
@@ -44,7 +53,7 @@ $('.banner-slider').slick({
 
 
 var rev = $('.rev_slider');
-rev.on('init', function(event, slick, currentSlide) {
+rev.on('init', function (event, slick, currentSlide) {
   var
     cur = $(slick.$slides[slick.currentSlide]),
     next = cur.next(),
@@ -52,13 +61,13 @@ rev.on('init', function(event, slick, currentSlide) {
     prev = cur.prev(),
     prev2 = cur.prev().prev();
   prev.addClass('slick-sprev');
-  next.addClass('slick-snext');  
+  next.addClass('slick-snext');
   prev2.addClass('slick-sprev2');
-  next2.addClass('slick-snext2');  
+  next2.addClass('slick-snext2');
   cur.removeClass('slick-snext').removeClass('slick-sprev').removeClass('slick-snext2').removeClass('slick-sprev2');
   slick.$prev = prev;
   slick.$next = next;
-}).on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+}).on('beforeChange', function (event, slick, currentSlide, nextSlide) {
   console.log('beforeChange');
   var
     cur = $(slick.$slides[nextSlide]);
@@ -67,8 +76,8 @@ rev.on('init', function(event, slick, currentSlide) {
   slick.$next.removeClass('slick-snext');
   slick.$prev.prev().removeClass('slick-sprev2');
   slick.$next.next().removeClass('slick-snext2');
-  next = cur.next(),  
-  prev = cur.prev();
+  next = cur.next(),
+    prev = cur.prev();
   //prev2.prev().prev();
   //next2.next().next();
   prev.addClass('slick-sprev');
@@ -88,15 +97,15 @@ rev.slick({
   prevArrow: '<button> prev</button>',
   nextArrow: '<button> next</button>',
   infinite: true,
-  autoplay:true,
-  autoplaySpeed:1200,
+  autoplay: true,
+  autoplaySpeed: 1200,
   centerMode: true,
   slidesPerRow: 1,
   slidesToShow: 1,
   slidesToScroll: 1,
   centerPadding: '0',
   swipe: true,
-  customPaging: function(slider, i) {
+  customPaging: function (slider, i) {
     return '';
   },
   /*infinite: false,*/
@@ -118,21 +127,20 @@ $('.course-slider').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   arrows: true,
-  autoplay:false,
-  autoplaySpeed:1200,
-  centerMode:true,
-  centerPadding:"0",
-  prevArrow:'<i class="fas fa-angle-left prev"></i>',
-  nextArrow:'<i class="fas fa-angle-right next"></i>',
-  responsive: [
-    {
+  autoplay: false,
+  autoplaySpeed: 1200,
+  centerMode: true,
+  centerPadding: "0",
+  prevArrow: '<i class="fas fa-angle-left prev"></i>',
+  nextArrow: '<i class="fas fa-angle-right next"></i>',
+  responsive: [{
       breakpoint: 992,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
         infinite: true,
         dots: false,
-           centerMode:false,
+        centerMode: false,
       }
     },
     {
@@ -141,7 +149,7 @@ $('.course-slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
-        dots:true,
+        dots: true,
       }
     },
     {
@@ -150,7 +158,7 @@ $('.course-slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
-        dots:true,
+        dots: true,
       }
     }
     // You can unslick at a given breakpoint now by adding:
@@ -162,7 +170,7 @@ $('.course-slider').slick({
 
 
 var rev = $('.test_slider');
-rev.on('init', function(event, slick, currentSlide) {
+rev.on('init', function (event, slick, currentSlide) {
   var
     cur = $(slick.$slides[slick.currentSlide]),
     next = cur.next(),
@@ -170,13 +178,13 @@ rev.on('init', function(event, slick, currentSlide) {
     prev = cur.prev(),
     prev2 = cur.prev().prev();
   prev.addClass('slick-sprev');
-  next.addClass('slick-snext');  
+  next.addClass('slick-snext');
   prev2.addClass('slick-sprev2');
-  next2.addClass('slick-snext2');  
+  next2.addClass('slick-snext2');
   cur.removeClass('slick-snext').removeClass('slick-sprev').removeClass('slick-snext2').removeClass('slick-sprev2');
   slick.$prev = prev;
   slick.$next = next;
-}).on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+}).on('beforeChange', function (event, slick, currentSlide, nextSlide) {
   console.log('beforeChange');
   var
     cur = $(slick.$slides[nextSlide]);
@@ -185,8 +193,8 @@ rev.on('init', function(event, slick, currentSlide) {
   slick.$next.removeClass('slick-snext');
   slick.$prev.prev().removeClass('slick-sprev2');
   slick.$next.next().removeClass('slick-snext2');
-  next = cur.next(),  
-  prev = cur.prev();
+  next = cur.next(),
+    prev = cur.prev();
   //prev2.prev().prev();
   //next2.next().next();
   prev.addClass('slick-sprev');
@@ -204,22 +212,22 @@ rev.slick({
   dots: false,
   focusOnSelect: true,
   infinite: true,
-  autoplay:false,
-  autoplaySpeed:1200,
+  autoplay: false,
+  autoplaySpeed: 1200,
   centerMode: true,
   slidesPerRow: 1,
   slidesToShow: 1,
   slidesToScroll: 1,
   centerPadding: '0',
   swipe: true,
-  
-  customPaging: function(slider, i) {
+
+  customPaging: function (slider, i) {
     return '';
   },
   asNavFor: '.details-slider',
-  prevArrow:'<i class="fas fa-angle-left prev"></i>',
-  nextArrow:'<i class="fas fa-angle-right next"></i>',
-  
+  prevArrow: '<i class="fas fa-angle-left prev"></i>',
+  nextArrow: '<i class="fas fa-angle-right next"></i>',
+
 });
 
 
@@ -227,12 +235,11 @@ $('.details-slider').slick({
   dots: false,
   infinite: true,
   speed: 300,
-  arrows:false,
+  arrows: false,
   slidesToShow: 1,
   slidesToScroll: 1,
   asNavFor: '.test_slider',
-  responsive: [
-    {
+  responsive: [{
       breakpoint: 992,
       settings: {
         slidesToShow: 1,
@@ -247,7 +254,7 @@ $('.details-slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
-        dots:true,
+        dots: true,
       }
     },
     {
@@ -256,7 +263,7 @@ $('.details-slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
-        dots:true,
+        dots: true,
       }
     }
     // You can unslick at a given breakpoint now by adding:
@@ -274,10 +281,9 @@ $('.teacher-slider').slick({
   slidesToShow: 4,
   slidesToScroll: 1,
   arrows: false,
-  autoplay:false,
-  autoplaySpeed:1200,
-  responsive: [
-    {
+  autoplay: false,
+  autoplaySpeed: 1200,
+  responsive: [{
       breakpoint: 1024,
       settings: {
         slidesToShow: 3,
@@ -292,7 +298,7 @@ $('.teacher-slider').slick({
         slidesToShow: 2,
         slidesToScroll: 1,
         arrows: false,
-        dots:true,
+        dots: true,
       }
     },
     {
@@ -301,7 +307,7 @@ $('.teacher-slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
-        dots:true,
+        dots: true,
       }
     }
     // You can unslick at a given breakpoint now by adding:
@@ -319,12 +325,11 @@ $('.footer-slider').slick({
   slidesToShow: 6,
   slidesToScroll: 1,
   arrows: false,
-  centerMode:true,
-  centerPadding:"30px",
-  autoplay:false,
-  autoplaySpeed:1200,
-  responsive: [
-    {
+  centerMode: true,
+  centerPadding: "30px",
+  autoplay: false,
+  autoplaySpeed: 1200,
+  responsive: [{
       breakpoint: 992,
       settings: {
         slidesToShow: 4,
@@ -339,7 +344,7 @@ $('.footer-slider').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
         arrows: false,
-        dots:false,
+        dots: false,
       }
     },
     {
@@ -348,7 +353,7 @@ $('.footer-slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
-        dots:false,
+        dots: false,
       }
     }
     // You can unslick at a given breakpoint now by adding:
@@ -356,4 +361,3 @@ $('.footer-slider').slick({
     // instead of a settings object
   ]
 });
-

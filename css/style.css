@@ -105,6 +105,8 @@ header .reg a:hover {
 nav {
     padding-top: 20px !important;
     padding-bottom: 30px !important;
+    transition: .7s;
+
 }
 
 nav ul li {
@@ -118,6 +120,10 @@ nav ul li {
 nav ul li a {
     color: #2d3e50;
     transition: .6s !important;
+}
+
+nav ul li a.active {
+    color: #fbaa33;
 }
 
 nav ul li a:hover {
@@ -140,6 +146,15 @@ nav .button a {
 nav .button a:hover {
     background: #2d3e50;
     color: white;
+}
+
+.fixedmenu {
+    background: white;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
 }
 
 /* .nav-bg {
@@ -1188,7 +1203,7 @@ nav .button a:hover {
 }
 
 #testimonial-part .accordion-button:focus {
-/*    box-shadow: 0 0 0 0.25rem #fbaa33;*/
+    /*    box-shadow: 0 0 0 0.25rem #fbaa33;*/
     box-shadow: none;
 }
 
