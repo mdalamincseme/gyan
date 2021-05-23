@@ -357,6 +357,7 @@ nav .button a:hover {
 ========================================= */
 #about-part {
     padding-bottom: 60px;
+    padding-top: 60px;
 }
 
 #about-part .row {
@@ -565,9 +566,8 @@ nav .button a:hover {
         course part css start
 ========================================= */
 #course-part {
-    margin-top: 100px;
-    padding: 0;
-    margin-bottom: 40px;
+    padding-bottom: 60px;
+    padding-top: 60px;
 }
 
 #course-part .item {
@@ -805,8 +805,8 @@ nav .button a:hover {
         event part css start
 ========================================= */
 #event-part {
-    margin-top: 70px;
-    padding-bottom: 80px;
+    padding-bottom: 60px;
+    padding-top: 60px;
 }
 
 #event-part .calender img {
@@ -1331,6 +1331,8 @@ nav .button a:hover {
 ========================================= */
 #blog-part {
     transform: translateY(-17%);
+    padding-bottom: 60px;
+    padding-top: 60px;
 }
 
 #blog-part .big {
@@ -1715,7 +1717,19 @@ nav .button a:hover {
         footer-img part css end
 ========================================= */
 
-
+.bottom-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #f7980b;
+    color: white;
+    transition: .7s;
+    padding: 5px 12px;
+    font-size: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    display: none;
+}
 /* =========================================
         footer part css start
 ========================================= */
